@@ -10,7 +10,7 @@ page 123456717 "CSD Seminar Details FactBox"
 
     layout
     {
-        area(content)
+        area(Content)
         {
             field("No.";"No.")
             {
@@ -31,10 +31,6 @@ page 123456717 "CSD Seminar Details FactBox"
             {
             }
         }
-    }
-
-    actions
-    {
     }
 }
 
