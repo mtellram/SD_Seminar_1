@@ -58,6 +58,13 @@ page 123456710 "CSD Seminar Registration"
                 {
                 }
             }
+
+            part(SeminarRegistrationLines;"CSD Seminar Reg. Subpage")
+            {
+                Caption='Lines';
+                SubPageLink="Document No."=field("No.");
+            }
+
             group("Seminar Room")
             {
                 field("Room Resource No.";"Room Resource No.")
@@ -104,6 +111,13 @@ page 123456710 "CSD Seminar Registration"
             {
                 SubPageLink="No."=field("Seminar No."); 
             }
+
+            part("Customer Details FactBox";"Customer Details FactBox")
+            {
+                Provider=SeminarRegistrationLines;
+                SubPageLink="No."=field("Bill-to Customer No.");
+            }
+
             systempart("Links";Links)
             {
             }
