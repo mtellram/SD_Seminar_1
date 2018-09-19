@@ -291,6 +291,12 @@ table 123456710 "CSD Seminar Reg. Header"
         {
             Caption = 'Posting No.';
         }
+
+        Field(29;"No. Printed";Integer)
+        {
+            Caption='No. Printed';
+            Editable=false;
+        }
     }
 
     keys
